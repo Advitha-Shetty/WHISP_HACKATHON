@@ -1,0 +1,45 @@
+{
+  "description": "Sample payload shape for WHISP districts (see backend/data/seed.json for full dataset).",
+  "districts": [
+    {
+      "id": 1,
+      "name": "Ballari",
+      "state": "Karnataka",
+      "anaemia": 58,
+      "menstrualHygiene": 62,
+      "awareness": 42,
+      "menopauseSupport": 28,
+      "funding": 25,
+      "allocated": 23,
+      "utilized": 17,
+      "padCenters": 18,
+      "clinics": 12,
+      "programs": 6,
+      "lat": 15.15,
+      "lng": 76.92,
+      "risk": "High",
+      "population": 280000,
+      "trend": [48, 50, 52, 55, 55, 58]
+    },
+    {
+      "id": 3,
+      "name": "Kalaburagi",
+      "state": "Karnataka",
+      "anaemia": 72,
+      "menstrualHygiene": 65,
+      "awareness": 55,
+      "menopauseSupport": 38,
+      "funding": 30,
+      "allocated": 28,
+      "utilized": 14,
+      "padCenters": 15,
+      "clinics": 10,
+      "programs": 4,
+      "lat": 17.33,
+      "lng": 76.82,
+      "risk": "High",
+      "population": 320000,
+      "trend": [60, 62, 62, 65, 68, 72]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "districts": [
+    {
+      "id": 1,
+      "name": "Ballari",
+      "state": "Karnataka",
+      "anaemia": 58,
+      "menstrualHygiene": 62,
+      "awareness": 42,
+      "menopauseSupport": 28,
+      "funding": 25,
+      "allocated": 23,
+      "utilized": 17,
+      "padCenters": 18,
+      "clinics": 12,
+      "programs": 6,
+      "lat": 15.15,
+      "lng": 76.92,
+      "risk": "High",
+      "population": 280000,
+      "trend": [48, 50, 52, 55, 55, 58]
+    },
+    {
+      "id": 2,
+      "name": "Bagalkot",
+      "state": "Karnataka",
+      "anaemia": 65,
+      "menstrualHygiene": 70,
+      "awareness": 60,
+      "menopauseSupport": 45,
+      "funding": 20,
+      "allocated": 19,
+      "utilized": 15,
+      "padCenters": 22,
+      "clinics": 15,
+      "programs": 8,
+      "lat": 16.18,
+      "lng": 75.70,
+      "risk": "Moderate",
+      "population": 195000,
+      "trend": [52, 55, 58, 60, 62, 65]
+    },
+    {
+      "id": 3,
+      "name": "Kalaburagi",
+      "state": "Karnataka",
+      "anaemia": 72,
+      "menstrualHygiene": 65,
+      "awareness": 55,
+      "menopauseSupport": 38,
+      "funding": 30,
+      "allocated": 28,
+      "utilized": 14,
+      "padCenters": 15,
+      "clinics": 10,
+      "programs": 4,
+      "lat": 17.33,
+      "lng": 76.82,
+      "risk": "High",
+      "population": 320000,
+      "trend": [60, 62, 62, 65, 68, 72]
+    },
+    {
+      "id": 4,
+      "name": "Bangalore Rural",
+      "state": "Karnataka",
+      "anaemia": 45,
+      "menstrualHygiene": 80,
+      "awareness": 75,
+      "menopauseSupport": 62,
+      "funding": 18,
+      "allocated": 17,
+      "utilized": 16,
+      "padCenters": 30,
+      "clinics": 25,
+      "programs": 12,
+      "lat": 13.22,
+      "lng": 77.57,
+      "risk": "Low",
+      "population": 110000,
+      "trend": [38, 40, 42, 44, 44, 45]
+    },
+    {
+      "id": 5,
+      "name": "Uttara Kannada",
+      "state": "Karnataka",
+      "anaemia": 40,
+      "menstrualHygiene": 82,
+      "awareness": 78,
+      "menopauseSupport": 70,
+      "funding": 15,
+      "allocated": 14,
+      "utilized": 13,
+      "padCenters": 28,
+      "clinics": 22,
+      "programs": 14,
+      "lat": 14.79,
+      "lng": 74.68,
+      "risk": "Low",
+      "population": 95000,
+      "trend": [32, 34, 36, 38, 39, 40]
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "district": "Ballari",
+      "type": "No Pads Available",
+      "description": "Pad centers at Kudligi Town running out of stock",
+      "location": "Kudligi Town",
+      "status": "Open",
+      "timestamp": "2024-04-28T08:00:00Z",
+      "anonymous": true
+    },
+    {
+      "id": 2,
+      "district": "Kalaburagi",
+      "type": "Clinic Not Working",
+      "description": "Civil Hospital OPD closed unexpectedly",
+      "location": "Civil Hospital",
+      "status": "Investigating",
+      "timestamp": "2024-04-28T05:00:00Z",
+      "anonymous": true
+    },
+    {
+      "id": 3,
+      "district": "Bagalkot",
+      "type": "No Awareness Program",
+      "description": "No programs conducted in Mudhol block this month",
+      "location": "Mudhol Block",
+      "status": "Open",
+      "timestamp": "2024-04-27T10:00:00Z",
+      "anonymous": true
+    },
+    {
+      "id": 4,
+      "district": "Ballari",
+      "type": "Wrong Location",
+      "description": "Hospet PHC listed at wrong coordinates in app",
+      "location": "Hospet PHC",
+      "status": "Resolved",
+      "timestamp": "2024-04-26T14:00:00Z",
+      "anonymous": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@whisp.gov",
+      "role": "government",
+      "name": "District Admin"
+    },
+    {
+      "id": 2,
+      "email": "citizen@whisp.in",
+      "role": "citizen",
+      "name": "Kavya"
+    }
+  ]
+}
