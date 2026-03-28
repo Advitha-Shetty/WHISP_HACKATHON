@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WHISP Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>Women's Health Dashboard</h1>
+
+<h2>District Health Scores</h2>
+<table border="1" id="table"></table>
+
+<h2>Graph</h2>
+<canvas id="chart"></canvas>
+
+<h2>Insights</h2>
+<div id="insights"></div>
+
+<script>
+
+// Fetch data
+fetch("http://127.0.0.1:8000/data")
+.then(res => res.json())
+.then(data => {
+
+    let table = document.getElementById("table");
+    table.innerHTML = "<tr><th>District</th><th>Score</th><th>Risk</th></tr>";
+
+    data.forEach(d => {
+        table.innerHTML += `<tr>
+            <td>${d.District}</td>
+            <td>${d.HealthScore.toFixed(2)}</td>
+            <td>${d.Risk}</td>
+        </tr>`;
+    });
+
+    // Graph
+    const labels = data.map(d => d.District);
+    const scores = data.map(d => d.HealthScore);
+
+    new Chart(document.getElementById("chart"), {
+        type: "bar",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Health Score",
+                data: scores
+            }]
+        }
+    });
+});
+
+// Insights
+fetch("http://127.0.0.1:8000/insights")
+.then(res => res.json())
+.then(data => {
+    document.getElementById("insights").innerHTML = data.join("<br>");
+});
+
+</script>
+
+</body>
+</html>
