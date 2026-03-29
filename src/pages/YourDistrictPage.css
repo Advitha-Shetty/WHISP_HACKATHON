@@ -1,0 +1,116 @@
+.your-district-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.district-header {
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(13, 43, 58, 0.8));
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.district-header h1 {
+  font-size: 2.5rem;
+  color: #2ecc71;
+  margin-bottom: 10px;
+}
+
+.district-header p {
+  color: #b8e1fc;
+  font-size: 1rem;
+}
+
+.location-access {
+  background: rgba(46, 204, 113, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.enable-location-btn {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enable-location-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.district-card {
+  background: rgba(13, 43, 58, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+  cursor: pointer;
+}
+
+.district-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(46, 204, 113, 0.5);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.district-card h3 {
+  color: #2ecc71;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.card-details p {
+  color: #b8e1fc;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.card-details strong {
+  color: #2ecc71;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .your-district-page { padding: 10px; }
+  .district-header h1 { font-size: 1.8rem; }
+  .cards-grid { grid-template-columns: 1fr; gap: 20px; }
+  .district-card { padding: 20px; }
+  .district-card h3 { font-size: 1.3rem; }
+}
